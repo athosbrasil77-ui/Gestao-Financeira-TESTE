@@ -27,9 +27,9 @@
     --mono: 'Space Mono', monospace;
     --sans: 'DM Sans', sans-serif;
   }
-
+ 
   * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color: transparent; }
-
+ 
   body {
     background: var(--bg);
     color: var(--text);
@@ -37,7 +37,7 @@
     min-height: 100vh;
     overflow-x: hidden;
   }
-
+ 
   /* Grain overlay */
   body::before {
     content: '';
@@ -48,7 +48,7 @@
     z-index: 0;
     opacity: 0.4;
   }
-
+ 
   /* Ambient glow */
   .glow-top {
     position: fixed;
@@ -59,7 +59,7 @@
     pointer-events: none;
     z-index: 0;
   }
-
+ 
   .wrapper {
     position: relative;
     z-index: 1;
@@ -67,7 +67,7 @@
     margin: 0 auto;
     padding: 0 0 100px;
   }
-
+ 
   /* ── HEADER ── */
   .header {
     padding: 52px 20px 24px;
@@ -110,7 +110,7 @@
     margin-top: 4px;
   }
   .month-badge:hover { background: rgba(0,229,160,0.2); }
-
+ 
   /* ── MONTH SELECTOR ── */
   .month-selector {
     display: none;
@@ -143,7 +143,7 @@
     border-color: rgba(0,229,160,0.3);
     color: var(--green);
   }
-
+ 
   /* ── SALDO HERO ── */
   .hero {
     padding: 8px 20px 20px;
@@ -188,7 +188,7 @@
     color: var(--text2);
     margin-bottom: 20px;
   }
-
+ 
   /* Progress bar */
   .progress-wrap {
     margin-bottom: 6px;
@@ -226,7 +226,7 @@
     border-radius: 10px;
     filter: blur(3px);
   }
-
+ 
   .alert-chip {
     display: inline-flex;
     align-items: center;
@@ -242,7 +242,7 @@
   .alert-chip.ok     { background: var(--green-dim); color: var(--green); border: 1px solid rgba(0,229,160,0.2); }
   .alert-chip.warn   { background: var(--yellow-dim); color: var(--yellow); border: 1px solid rgba(255,209,102,0.2); }
   .alert-chip.danger { background: var(--red-dim); color: var(--red); border: 1px solid rgba(255,77,109,0.2); }
-
+ 
   /* ── 3 MINI CARDS ── */
   .mini-cards {
     display: grid;
@@ -285,7 +285,7 @@
   .mini-card.blue .mini-value  { color: var(--blue); }
   .mini-card.red .mini-value   { color: var(--red); }
   .mini-card.purple .mini-value{ color: var(--purple); }
-
+ 
   /* ── SECTION ── */
   .section { padding: 0 20px 8px; }
   .section-header {
@@ -306,7 +306,7 @@
     font-size: 12px;
     font-weight: 700;
   }
-
+ 
   /* ── INPUT CARD (Despesas) ── */
   .input-card {
     background: var(--card);
@@ -338,7 +338,7 @@
     font-size: 11px;
     color: var(--text3);
   }
-
+ 
   /* Expense rows */
   .expense-list { padding: 4px 0; }
   .expense-row {
@@ -356,7 +356,7 @@
   }
   .expense-row:not(:last-child) { border-bottom: 1px solid var(--border); }
   .expense-row:hover { background: rgba(255,255,255,0.02); }
-
+ 
   .expense-name-input, .expense-val-input {
     background: transparent;
     border: none;
@@ -380,7 +380,7 @@
   .expense-val-input.blue-val  { color: var(--blue); }
   .expense-val-input.red-val   { color: var(--red); }
   .expense-val-input::placeholder { color: var(--text3); font-weight: 400; }
-
+ 
   .del-btn {
     background: transparent;
     border: none;
@@ -394,7 +394,7 @@
     flex-shrink: 0;
   }
   .del-btn:hover { color: var(--red); background: var(--red-dim); }
-
+ 
   .add-row-btn {
     display: flex;
     align-items: center;
@@ -412,7 +412,7 @@
   }
   .add-row-btn:hover { color: var(--text2); background: rgba(255,255,255,0.02); }
   .add-row-btn .plus { font-size: 18px; line-height: 1; }
-
+ 
   /* ── SALDO INICIAL INPUT ── */
   .saldo-input-wrap {
     padding: 0 20px 20px;
@@ -464,7 +464,7 @@
     letter-spacing: -1px;
   }
   .saldo-field::placeholder { color: rgba(0,229,160,0.25); }
-
+ 
   /* ── VISUAL BREAKDOWN ── */
   .breakdown-card {
     background: var(--card);
@@ -489,7 +489,7 @@
   .breakdown-seg.fix { background: var(--blue); }
   .breakdown-seg.var { background: var(--red); }
   .breakdown-seg.sav { background: var(--green); }
-
+ 
   .breakdown-legend {
     display: flex;
     flex-direction: column;
@@ -518,7 +518,7 @@
     width: 38px;
     text-align: right;
   }
-
+ 
   /* ── BOTTOM NAV ── */
   .bottom-nav {
     position: fixed;
@@ -549,11 +549,11 @@
   .nav-item.active { color: var(--green); }
   .nav-icon { font-size: 20px; }
   .nav-label { font-size: 10px; font-family: var(--mono); letter-spacing: 0.05em; }
-
+ 
   /* ── PAGES ── */
   .page { display: none; }
   .page.active { display: block; }
-
+ 
   /* ── ANUAL PAGE ── */
   .anual-card {
     background: var(--card);
@@ -599,11 +599,11 @@
     min-width: 72px;
   }
   .anual-status { font-size: 14px; }
-
+ 
   /* ── UTIL ── */
   .divider { height: 1px; background: var(--border); margin: 0 20px 16px; }
   .spacer { height: 12px; }
-
+ 
   /* Fade in animation */
   .fade-in { animation: fadeIn 0.4s ease both; }
   @keyframes fadeIn { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
@@ -613,7 +613,7 @@
   .fade-in:nth-child(4) { animation-delay: 0.18s; }
   .fade-in:nth-child(5) { animation-delay: 0.24s; }
   .fade-in:nth-child(6) { animation-delay: 0.30s; }
-
+ 
   /* pulse on update */
   @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
   .updating { animation: pulse 0.5s ease; }
@@ -633,7 +633,7 @@
     gap: 0;
   }
   .lock-screen.hidden { display: none; }
-
+ 
   .lock-glow {
     position: absolute;
     top: -100px; left: 50%;
@@ -642,7 +642,7 @@
     background: radial-gradient(ellipse, rgba(0,229,160,0.08) 0%, transparent 70%);
     pointer-events: none;
   }
-
+ 
   .lock-icon {
     font-size: 48px;
     margin-bottom: 16px;
@@ -652,7 +652,7 @@
     0%,100% { transform: translateY(0); }
     50%      { transform: translateY(-8px); }
   }
-
+ 
   .lock-title {
     font-family: var(--mono);
     font-size: 13px;
@@ -668,7 +668,7 @@
     margin-bottom: 40px;
     letter-spacing: -0.5px;
   }
-
+ 
   /* PIN dots */
   .pin-dots {
     display: flex;
@@ -699,7 +699,7 @@
     60%      { transform: translateX(-4px); }
     80%      { transform: translateX(4px); }
   }
-
+ 
   /* Keypad */
   .keypad {
     display: grid;
@@ -742,7 +742,7 @@
     cursor: default;
     pointer-events: none;
   }
-
+ 
   .lock-error {
     margin-top: 20px;
     font-family: var(--mono);
@@ -753,7 +753,7 @@
   }
   .lock-error.show { opacity: 1; }
 </style>
-
+ 
 <!-- LOCK SCREEN -->
 <div class="lock-screen" id="lockScreen">
   <div class="lock-glow"></div>
@@ -782,12 +782,12 @@
   </div>
   <div class="lock-error" id="lockError">PIN incorreto. Tenta novamente.</div>
 </div>
-
+ 
 <body>
 <div class="glow-top"></div>
-
+ 
 <div class="wrapper">
-
+ 
   <!-- MONTH PICKER -->
   <div class="header fade-in">
     <div class="header-top">
@@ -798,7 +798,7 @@
       <div class="month-badge" id="monthBadge" onclick="toggleMonthSelector()">▾ <span id="currentMonthLabel">Maio</span></div>
     </div>
   </div>
-
+ 
   <div class="month-selector" id="monthSelector">
     <button class="month-btn" onclick="selectMonth(0)">Jan</button>
     <button class="month-btn" onclick="selectMonth(1)">Fev</button>
@@ -813,10 +813,10 @@
     <button class="month-btn" onclick="selectMonth(10)">Nov</button>
     <button class="month-btn" onclick="selectMonth(11)">Dez</button>
   </div>
-
+ 
   <!-- PAGE: MÊS -->
   <div class="page active" id="page-mes">
-
+ 
     <!-- SALDO INICIAL -->
     <div class="saldo-input-wrap fade-in">
       <div class="saldo-input-card">
@@ -828,7 +828,7 @@
         <div style="color:var(--text3);font-size:18px;">€</div>
       </div>
     </div>
-
+ 
     <!-- HERO SALDO ATUAL -->
     <div class="hero fade-in">
       <div class="hero-card">
@@ -847,7 +847,7 @@
         <div class="alert-chip ok" id="alertChip">✅ Dentro do limite</div>
       </div>
     </div>
-
+ 
     <!-- MINI CARDS -->
     <div class="mini-cards fade-in">
       <div class="mini-card blue">
@@ -866,7 +866,7 @@
         <div class="mini-value" id="totalGasto">€0</div>
       </div>
     </div>
-
+ 
     <!-- BREAKDOWN VISUAL -->
     <div class="section fade-in">
       <div class="breakdown-card">
@@ -900,7 +900,7 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- DESPESAS FIXAS -->
     <div class="section fade-in">
       <div class="section-header">
@@ -919,7 +919,7 @@
         </button>
       </div>
     </div>
-
+ 
     <!-- DESPESAS VARIÁVEIS -->
     <div class="section fade-in">
       <div class="section-header">
@@ -938,9 +938,9 @@
         </button>
       </div>
     </div>
-
+ 
   </div><!-- end page-mes -->
-
+ 
   <!-- PAGE: ANUAL -->
   <div class="page" id="page-anual">
     <div style="padding: 20px 20px 0">
@@ -948,9 +948,9 @@
     </div>
     <div class="section" id="anualList"></div>
   </div>
-
+ 
 </div><!-- wrapper -->
-
+ 
 <!-- BOTTOM NAV -->
 <div class="bottom-nav">
   <button class="nav-item active" id="nav-mes" onclick="showPage('mes')">
@@ -962,25 +962,25 @@
     <span class="nav-label">Anual</span>
   </button>
 </div>
-
+ 
 <script>
 const MONTHS_PT = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho",
                    "Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
 const MONTHS_SHORT = ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"];
-
+ 
 // State
 let currentMonth = 4; // Maio default
 let data = JSON.parse(localStorage.getItem('gf_data') || '{}');
-
+ 
 // Init month data
 function initMonth(m) {
   if (!data[m]) data[m] = { saldo: '', fixas: [], var: [] };
 }
-
+ 
 function save() {
   localStorage.setItem('gf_data', JSON.stringify(data));
 }
-
+ 
 // ── MONTH ──
 function toggleMonthSelector() {
   document.getElementById('monthSelector').classList.toggle('open');
@@ -992,7 +992,7 @@ function selectMonth(m) {
   document.getElementById('monthSelector').classList.remove('open');
   renderMonth();
 }
-
+ 
 // ── PAGE ──
 function showPage(p) {
   document.querySelectorAll('.page').forEach(el => el.classList.remove('active'));
@@ -1001,21 +1001,21 @@ function showPage(p) {
   document.getElementById('nav-'+p).classList.add('active');
   if (p === 'anual') renderAnual();
 }
-
+ 
 // ── RENDER MONTH ──
 function renderMonth() {
   initMonth(currentMonth);
   const d = data[currentMonth];
-
+ 
   // Saldo input
   document.getElementById('saldoInput').value = d.saldo || '';
-
+ 
   // Render lists
   renderList('fixas');
   renderList('var');
   recalc();
 }
-
+ 
 function renderList(type) {
   initMonth(currentMonth);
   const d = data[currentMonth];
@@ -1035,9 +1035,9 @@ function renderList(type) {
     list.appendChild(row);
   });
 }
-
+ 
 function escHtml(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-
+ 
 function addRow(type) {
   initMonth(currentMonth);
   data[currentMonth][type].push({ name: '', val: '' });
@@ -1051,7 +1051,7 @@ function addRow(type) {
     if (inputs.length) inputs[inputs.length-1].focus();
   }, 50);
 }
-
+ 
 function delItem(type, idx) {
   initMonth(currentMonth);
   data[currentMonth][type].splice(idx, 1);
@@ -1059,64 +1059,64 @@ function delItem(type, idx) {
   renderList(type);
   recalc();
 }
-
+ 
 function updateItem(type, idx, key, val) {
   initMonth(currentMonth);
   data[currentMonth][type][idx][key] = val;
   save();
   recalc();
 }
-
+ 
 // ── RECALC ──
 function recalc() {
   initMonth(currentMonth);
   const d = data[currentMonth];
-
+ 
   // Saldo from input
   const saldoVal = parseFloat(document.getElementById('saldoInput').value) || 0;
   d.saldo = document.getElementById('saldoInput').value;
   save();
-
+ 
   const fixasTotal = (d.fixas || []).reduce((s,x) => s + (parseFloat(x.val)||0), 0);
   const varTotal   = (d.var   || []).reduce((s,x) => s + (parseFloat(x.val)||0), 0);
   const total      = fixasTotal + varTotal;
   const saldoAtual = saldoVal - total;
   const pct        = saldoVal > 0 ? Math.min(total / saldoVal, 1) : 0;
-
+ 
   // Hero
   const heroEl = document.getElementById('heroSaldo');
   heroEl.textContent = fmt(saldoAtual);
   heroEl.className = 'hero-amount' + (saldoAtual < 0 ? ' negative' : '');
-
+ 
   document.getElementById('heroSub').textContent = saldoVal > 0
     ? `${fmt(total)} gastos de ${fmt(saldoVal)}`
     : 'Introduz o teu saldo inicial';
-
+ 
   // Progress
   const pctLabel = saldoVal > 0 ? Math.round(pct*100)+'%' : '0%';
   document.getElementById('progressPct').textContent = pctLabel;
   const fill = document.getElementById('progressFill');
   fill.style.width = (pct*100)+'%';
   fill.className = 'progress-fill' + (pct > 0.9 ? ' danger' : pct > 0.75 ? ' warn' : '');
-
+ 
   // Alert chip
   const chip = document.getElementById('alertChip');
   if (saldoVal <= 0) { chip.className='alert-chip ok'; chip.textContent='✅ Dentro do limite'; }
   else if (pct > 0.9) { chip.className='alert-chip danger'; chip.textContent='⚠️ Alerta: >90% gasto!'; }
   else if (pct > 0.75) { chip.className='alert-chip warn'; chip.textContent='⚡ Atenção: >75% gasto'; }
   else { chip.className='alert-chip ok'; chip.textContent='✅ Dentro do limite'; }
-
+ 
   // Mini cards
   document.getElementById('totalFixas').textContent = fmtShort(fixasTotal);
   document.getElementById('totalVar').textContent   = fmtShort(varTotal);
   document.getElementById('totalGasto').textContent = fmtShort(total);
-
+ 
   // Section headers
   document.getElementById('fixasHeader').textContent = fmt(fixasTotal);
   document.getElementById('varHeader').textContent   = fmt(varTotal);
   document.getElementById('fixasCount').textContent  = (d.fixas||[]).length + ' itens';
   document.getElementById('varCount').textContent    = (d.var||[]).length   + ' itens';
-
+ 
   // Breakdown bar
   if (saldoVal > 0) {
     const pFix = Math.max(0, fixasTotal/saldoVal*100);
@@ -1136,7 +1136,7 @@ function recalc() {
   document.getElementById('legVar').textContent = fmt(varTotal);
   document.getElementById('legSav').textContent = fmt(Math.max(0,saldoAtual));
 }
-
+ 
 // ── ANUAL VIEW ──
 function renderAnual() {
   const container = document.getElementById('anualList');
@@ -1148,7 +1148,7 @@ function renderAnual() {
       if (s > maxSaldo) maxSaldo = s;
     }
   });
-
+ 
   MONTHS_PT.forEach((month, i) => {
     initMonth(i);
     const d = data[i];
@@ -1159,16 +1159,16 @@ function renderAnual() {
     const saldoAtual = saldoVal - total;
     const pct        = saldoVal > 0 ? total/saldoVal : 0;
     const isEmpty    = saldoVal === 0 && total === 0;
-
+ 
     const card = document.createElement('div');
     card.className = 'anual-card fade-in';
     card.style.animationDelay = (i * 0.04)+'s';
-
+ 
     const pFix = saldoVal > 0 ? Math.min(fixasTotal/saldoVal*100, 100) : 0;
     const pVar = saldoVal > 0 ? Math.min(varTotal/saldoVal*100, 100-pFix) : 0;
     const status = isEmpty ? '○' : saldoAtual < 0 ? '⚠️' : pct > 0.75 ? '⚡' : '✅';
     const saldoColor = isEmpty ? 'var(--text3)' : saldoAtual < 0 ? 'var(--red)' : 'var(--green)';
-
+ 
     card.innerHTML = `
       <div class="anual-row" onclick="goToMonth(${i})">
         <div class="anual-month">${MONTHS_SHORT[i]}</div>
@@ -1188,7 +1188,7 @@ function renderAnual() {
     container.appendChild(card);
   });
 }
-
+ 
 function goToMonth(m) {
   currentMonth = m;
   document.getElementById('currentMonthLabel').textContent = MONTHS_PT[m];
@@ -1196,7 +1196,7 @@ function goToMonth(m) {
   showPage('mes');
   renderMonth();
 }
-
+ 
 // ── FORMAT ──
 function fmt(n) {
   return '€' + Math.abs(n).toFixed(2).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.');
@@ -1205,11 +1205,11 @@ function fmtShort(n) {
   if (n >= 1000) return '€' + (n/1000).toFixed(1) + 'k';
   return '€' + n.toFixed(0);
 }
-
+ 
 // ── PIN LOCK ──
 const PIN = '1012';
 let pinEntry = '';
-
+ 
 function pinPress(digit) {
   if (pinEntry.length >= 4) return;
   pinEntry += digit;
@@ -1218,20 +1218,20 @@ function pinPress(digit) {
     setTimeout(checkPin, 100);
   }
 }
-
+ 
 function pinDel() {
   pinEntry = pinEntry.slice(0, -1);
   updateDots();
   document.getElementById('lockError').classList.remove('show');
 }
-
+ 
 function updateDots() {
   for (let i = 0; i < 4; i++) {
     const dot = document.getElementById('d' + i);
     dot.className = 'pin-dot' + (i < pinEntry.length ? ' filled' : '');
   }
 }
-
+ 
 function checkPin() {
   if (pinEntry === PIN) {
     document.getElementById('lockScreen').classList.add('hidden');
@@ -1247,12 +1247,12 @@ function checkPin() {
     }, 800);
   }
 }
-
+ 
 // Check if already unlocked this session
 if (sessionStorage.getItem('gf_unlocked') === '1') {
   document.getElementById('lockScreen').classList.add('hidden');
 }
-
+ 
 // ── INIT ──
 renderMonth();
 </script>
